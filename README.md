@@ -4,43 +4,23 @@ This project demonstrates how to connect an ESP32-WROOM-32 to a WiFi network and
 
 🧠 Project Overview
 
-Uses ESP32-WROOM-32
-
-Connects to a WiFi network
-
-Displays:
-
-Connection status
-
-IP address
-
-MAC address
-
-WiFi signal strength (RSSI)
-
-Useful for:
-
-IoT network analysis
-
-WiFi coverage testing
-
-ESP32 learning projects
+  This project uses an ESP32-WROOM-32 microcontroller to connect to a WiFi network and measure the WiFi signal strength (RSSI) in real time. Once connected, the ESP32 displays its IP address, MAC address, and RSSI value on the Serial Monitor. The project helps in understanding WiFi connectivity and signal quality, which is essential for designing reliable IoT applications.
 
 🛠️ Hardware Requirements
 
-ESP32-WROOM-32 development board
+1. ESP32-WROOM-32 development board
 
-USB cable (data cable)
+2. USB cable (data cable)
 
-Laptop / PC with Arduino IDE
+3. Laptop / PC with Arduino IDE
 
 💻 Software Requirements
 
-Arduino IDE
+1. Arduino IDE
 
-ESP32 Board Package installed
+2.ESP32 Board Package installed
 
-USB drivers (CP2102 / CH340 if required)
+3. USB drivers (CP2102 / CH340 if required)
 
 ⚙️ Arduino IDE Configuration
 
@@ -61,6 +41,7 @@ Programmer: Default
 ⚠️ Do not use Debug mode (OpenOCD is not supported on ESP32-WROOM-32).
 
 📜 Source Code
+
 #include <WiFi.h>
 
 /* -------- WiFi Credentials -------- */
@@ -92,6 +73,7 @@ void loop() {
   Serial.println(" dBm");
   delay(1000);
 }
+
 
 🧪 Output Example
 Connecting to WiFi.....
